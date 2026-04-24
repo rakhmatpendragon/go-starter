@@ -77,5 +77,21 @@ func main() {
 	fmt.Println(veg)
 
 	/* access elmnt slice with 3 index */
-	var item = 
+	fmt.Println("\n=== About access elmnt slice with 3 index ===")
+
+	var items = []string{"laptop", "smartphone", "smartwatch"}
+	var myItems = items[0:2]
+	var othItems = items[0:2:2]
+
+	fmt.Println(items)
+	fmt.Println(len(items))
+	fmt.Println(cap(items))
+
+	fmt.Println(myItems)
+	fmt.Println(len(myItems))
+	fmt.Println(cap(myItems))
+
+	fmt.Println(othItems)
+	fmt.Println(len(othItems))
+	fmt.Println(cap(othItems))
 }
