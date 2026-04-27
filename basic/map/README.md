@@ -3,4 +3,4 @@ Map is an associative data type in the form of a key-value pair. The stored data
 
 Map looks similar to a slice, except that the identifier used for access is not a numeric index but can be of any data type.
 
-## Implementasi
+## Implementation
