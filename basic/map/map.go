@@ -49,4 +49,54 @@ func main() {
 		fmt.Println(key, " \t:", val)
 	}
 
+	/* Delete on map */
+	fmt.Println("\n=== Implementation delete on map===")
+	fmt.Println(len(drink))
+	fmt.Println(drink)
+
+	delete(drink, "soda")
+
+	fmt.Println(len(drink))
+	fmt.Println(drink)
+
+	/* Check item on map */
+	fmt.Println("\n=== Implementation check item on map ===")
+
+	var mineralDrink, isMineralExist = drink["water"]
+	var juiceDrink, isJuiceExist = drink["orangeJuice"]
+
+	if isMineralExist {
+		fmt.Println("The price of mineral water is", mineralDrink)
+	} else {
+		fmt.Println("Mineral water not on the list menu")
+	}
+
+	if isJuiceExist {
+		fmt.Println("The price of mineral water is", juiceDrink)
+	} else {
+		fmt.Println("Juice not on the list menu")
+	}
+
+	/* Slice on map */
+	fmt.Println("\n=== Implementation slice on map ===")
+
+	var businessProduct = []map[string]string{
+		{"name": "Rakhmat", "product": "onigiri"},
+		{"name": "Malik", "product": "burger"},
+		{"name": "Ibrahim", "product": "daifuku"},
+	}
+
+	for _, product := range businessProduct {
+		fmt.Println(product["name"], product["product"])
+	}
+
+	var products = []map[string]string{
+		{"name": "onigiri", "flavour": "chicken teriyaki"},
+		{"id": "ong001", "store": "Jakarta"},
+		{"ingredient": "rice, chicken"},
+	}
+
+	for ky, vl := range products {
+		fmt.Println(ky, " \t:", vl)
+	}
 }
